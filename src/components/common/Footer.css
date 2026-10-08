@@ -180,7 +180,45 @@
 
     transform: none;
 }
+.footer-link {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
 
+    border: none;
+    background: transparent;
+
+    color: inherit;
+    text-align: left;
+
+    cursor: pointer;
+
+    font: inherit;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+.footer-bottom-link {
+    border: none;
+    background: transparent;
+
+    padding: 0;
+    margin-left: 20px;
+
+    color: inherit;
+
+    cursor: pointer;
+
+    font: inherit;
+}
+
+.footer-bottom-link:hover {
+    text-decoration: underline;
+}
 
 /* ========================================
    MOBILE

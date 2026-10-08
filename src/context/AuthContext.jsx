@@ -4,7 +4,12 @@ const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
 
+    // =========================
+    // USER
+    // =========================
+
     const [user, setUser] = useState(() => {
+
         const savedUser = localStorage.getItem("joizone_user");
 
         return savedUser
@@ -12,13 +17,29 @@ export function AuthProvider({ children }) {
             : null;
     });
 
-    // Login modal open/close
+
+    // =========================
+    // LOGIN MODAL
+    // =========================
+
     const [showLoginModal, setShowLoginModal] = useState(() => {
+
         const savedUser = localStorage.getItem("joizone_user");
 
-        // Agar already login hai to modal nahi
         return !savedUser;
     });
+
+
+    // =========================
+    // REDIRECT PATH
+    // =========================
+
+    const [redirectPath, setRedirectPath] = useState("/");
+
+
+    // =========================
+    // LOGIN
+    // =========================
 
     const login = (userData) => {
 
@@ -33,39 +54,75 @@ export function AuthProvider({ children }) {
         setShowLoginModal(false);
     };
 
+
+    // =========================
+    // LOGOUT
+    // =========================
+
     const logout = () => {
 
         setUser(null);
 
         localStorage.removeItem("joizone_user");
 
-        // Logout ke baad login modal
+        setRedirectPath("/");
+
+        // Logout ke baad login modal open
         setShowLoginModal(true);
     };
 
-    const openLoginModal = () => {
+
+    // =========================
+    // OPEN LOGIN MODAL
+    // =========================
+
+    const openLoginModal = (path = "/") => {
+
+        // User kis page/action par click kiya
+        setRedirectPath(path);
+
         setShowLoginModal(true);
     };
+
+
+    // =========================
+    // CLOSE LOGIN MODAL
+    // =========================
 
     const closeLoginModal = () => {
+
         setShowLoginModal(false);
     };
+
 
     return (
         <AuthContext.Provider
             value={{
+
                 user,
+
+                // Login
                 login,
+
+                // Logout
                 logout,
+
+                // Modal
                 showLoginModal,
                 openLoginModal,
                 closeLoginModal,
+
+                // Redirect
+                redirectPath,
+                setRedirectPath,
+
             }}
         >
             {children}
         </AuthContext.Provider>
     );
 }
+
 
 export function useAuth() {
     return useContext(AuthContext);

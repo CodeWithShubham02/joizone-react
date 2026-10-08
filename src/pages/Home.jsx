@@ -6,6 +6,7 @@ function Home(){
       useEffect(() => {
         initHomeAnimations();
     }, []);
+    
     return(
       <section>
         <main>
@@ -67,7 +68,7 @@ function Home(){
                BUTTONS
           ================================================== */}
           <div className="bank-hero-buttons">
-            <a href="contact.html" className="bank-primary-btn">
+            <a href="#" className="bank-primary-btn">
               Partner With Us
               <i className="bi bi-arrow-right" />
             </a>
