@@ -1,0 +1,209 @@
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(31, 122, 79, 0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(82, 206, 8, 0.06),
+            transparent 35%
+        ),
+        rgba(245, 248, 247, 0.95);
+
+    color: #103d2b;
+
+    padding: 70px 0 20px;
+
+    border-top:
+        1px solid rgba(31, 122, 79, 0.10);
+}
+
+
+/* COMPANY TEXT */
+
+.footer p {
+    color: #6f7d75;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* HEADINGS */
+
+.footer h5 {
+    color: #103d2b;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+
+/* LINKS */
+
+.footer a {
+    color: #68766e;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #1f7a4f;
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   SOCIAL ICONS
+======================================== */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d5e3db;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #1f7a4f;
+
+    margin: 0;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #1f7a4f;
+    color: #ffffff;
+
+    border-color: #1f7a4f;
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   CALL BUTTON
+======================================== */
+
+.call-btn {
+    background: #1f7a4f;
+
+    color: #ffffff !important;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 12px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.call-btn:hover {
+    background: #155e3c;
+
+    color: #ffffff !important;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(31, 122, 79, 0.18);
+}
+
+
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
+
+.footer-bottom {
+    border-top: 1px solid #dce6e0;
+
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    color: #7a8780;
+
+    font-size: 13px;
+}
+
+.footer-bottom a {
+    display: inline-block;
+
+    margin-left: 20px;
+
+    margin-bottom: 0;
+
+    color: #68766e;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #1f7a4f;
+
+    transform: none;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 767px) {
+
+    .footer {
+        padding: 50px 20px 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom .text-md-end {
+        text-align: center !important;
+
+        margin-top: 15px;
+    }
+
+    .footer-bottom a {
+        margin: 5px 8px;
+    }
+
+}

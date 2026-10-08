@@ -1,0 +1,3563 @@
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero-section {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 680px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 85% 50%,
+            rgba(82, 206, 8, 0.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5faf7 100%
+        );
+
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.hero-container {
+
+    width: 100%;
+
+    padding-left: 7%;
+    padding-right: 5%;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =====================================================
+   BACKGROUND GLOW
+===================================================== */
+
+.hero-glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    pointer-events: none;
+
+}
+
+.hero-glow-1 {
+
+    width: 300px;
+    height: 300px;
+
+    background: rgba(82, 206, 8, 0.12);
+
+    top: -100px;
+    left: -100px;
+
+}
+
+.hero-glow-2 {
+
+    width: 350px;
+    height: 350px;
+
+    background: rgba(31, 122, 79, 0.10);
+
+    bottom: -150px;
+    right: -100px;
+
+}
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.hero-content {
+
+    max-width: 650px;
+
+    padding: 70px 20px 70px 0;
+
+}
+
+
+/* BADGE */
+
+.hero-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    background: rgba(82, 206, 8, 0.10);
+
+    border: 1px solid rgba(82, 206, 8, 0.20);
+
+    color: #1f7a4f;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero-badge i {
+
+    color: #52ce08;
+
+    font-size: 14px;
+
+}
+
+
+/* TITLE */
+
+.hero-title {
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    line-height: 1.08;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    color: #10251b;
+
+    margin-bottom: 25px;
+
+}
+
+.hero-title span {
+
+    display: block;
+
+    color: #1f7a4f;
+
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+
+    max-width: 580px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #68756e;
+
+    margin-bottom: 32px;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.hero-primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 23px;
+
+    background: #1f7a4f;
+
+    color: #ffffff !important;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px rgba(31, 122, 79, 0.20);
+
+    transition: all 0.3s ease;
+
+}
+
+.hero-primary-btn:hover {
+
+    background: #145a39;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(31, 122, 79, 0.30);
+
+}
+
+.hero-primary-btn i {
+
+    transition: transform 0.3s ease;
+
+}
+
+.hero-primary-btn:hover i {
+
+    transform: translateX(4px);
+
+}
+
+
+/* SECONDARY */
+
+.hero-secondary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 13px 21px;
+
+    color: #1f7a4f;
+
+    border: 1px solid #d7e4dc;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+}
+
+.hero-secondary-btn:hover {
+
+    border-color: #1f7a4f;
+
+    background: #f3faf5;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =====================================================
+   TRUST ITEMS
+===================================================== */
+
+.hero-trust {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 45px;
+
+}
+
+
+.trust-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.trust-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eaf7ef;
+
+    color: #1f7a4f;
+
+}
+
+
+.trust-item strong {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #24382d;
+
+}
+
+
+.trust-item span {
+
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 11px;
+
+    color: #87928b;
+
+}
+
+
+/* =====================================================
+   RIGHT IMAGE AREA
+===================================================== */
+
+.hero-image-area {
+
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px;
+
+}
+
+
+/* =====================================================
+   IMAGE GLOW
+===================================================== */
+
+.image-glow {
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(82, 206, 8, 0.25),
+            rgba(31, 122, 79, 0.05),
+            transparent 70%
+        );
+
+    filter: blur(15px);
+
+    transition: all 0.5s ease;
+
+    pointer-events: none;
+
+}
+
+
+/* =====================================================
+   IMAGE CARD
+===================================================== */
+
+.hero-image-card {
+
+    position: relative;
+
+    width: min(520px, 90%);
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #ffffff;
+
+    border: 8px solid rgba(255,255,255,0.8);
+
+    box-shadow:
+        0 30px 70px rgba(22, 70, 45, 0.18);
+
+    transform: rotate(2deg);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+    z-index: 2;
+
+}
+
+
+/* IMAGE */
+
+.hero-image-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.5s ease;
+
+}
+
+
+/* OVERLAY */
+
+.image-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(0,0,0,0.35)
+        );
+
+}
+
+
+/* HOVER */
+
+.hero-image-card:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-10px)
+        scale(1.02);
+
+    box-shadow:
+        0 35px 90px rgba(31, 122, 79, 0.30);
+
+}
+
+.hero-image-card:hover img {
+
+    transform: scale(1.08);
+
+    filter: brightness(1.05);
+
+}
+
+
+/* =====================================================
+   FLOATING CARD
+===================================================== */
+
+.floating-card {
+
+    position: absolute;
+
+    left: -45px;
+
+    bottom: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 18px;
+
+    min-width: 235px;
+
+    background: rgba(255,255,255,0.95);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.15);
+
+    z-index: 5;
+
+    animation: floatingCard 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floatingCard {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+.floating-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eaf7ef;
+
+    color: #1f7a4f;
+
+    font-size: 18px;
+
+}
+
+
+.floating-card strong {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #1c3025;
+
+}
+
+
+.floating-card span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color: #7b877f;
+
+}
+
+
+/* =====================================================
+   DECORATIVE CIRCLES
+===================================================== */
+
+.decor-circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(31, 122, 79, 0.15);
+
+    pointer-events: none;
+
+}
+
+
+.decor-circle-1 {
+
+    width: 440px;
+    height: 440px;
+
+}
+
+
+.decor-circle-2 {
+
+    width: 540px;
+    height: 540px;
+
+    border-style: dashed;
+
+    animation: rotateCircle 25s linear infinite;
+
+}
+
+
+@keyframes rotateCircle {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+
+        min-height: auto;
+
+    }
+
+    .hero-container {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .hero-content {
+
+        padding: 60px 0 20px;
+
+        max-width: 100%;
+
+    }
+
+    .hero-title {
+
+        font-size: 48px;
+
+    }
+
+    .hero-image-area {
+
+        min-height: 550px;
+
+        padding: 30px 10px 70px;
+
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .hero-content {
+
+        padding-top: 45px;
+
+    }
+
+    .hero-title {
+
+        font-size: 39px;
+
+        letter-spacing: -1px;
+
+    }
+
+    .hero-description {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .hero-primary-btn,
+    .hero-secondary-btn {
+
+        justify-content: center;
+
+        width: 100%;
+
+    }
+
+    .hero-trust {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        margin-top: 30px;
+
+    }
+
+    .hero-image-area {
+
+        min-height: 450px;
+
+    }
+
+    .hero-image-card {
+
+        width: 100%;
+
+        height: 390px;
+
+    }
+
+    .floating-card {
+
+        left: 10px;
+
+        bottom: 20px;
+
+    }
+
+    .decor-circle-1 {
+
+        width: 330px;
+        height: 330px;
+
+    }
+
+    .decor-circle-2 {
+
+        width: 390px;
+        height: 390px;
+
+    }
+
+}
+/* =====================================================
+   BANK GROWTH SECTION
+===================================================== */
+
+.bank-growth-section {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 100px 0 120px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(31, 122, 79, 0.035),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(82, 206, 8, 0.035),
+            transparent 30%
+        ),
+        #f5f8f7;
+
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.bank-section-heading {
+
+    max-width: 760px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+}
+
+
+.bank-section-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 13px;
+
+    border-radius: 5px;
+
+    background:
+        rgba(82, 206, 8, 0.12);
+
+    color:
+        #389e18;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+
+    margin-bottom: 16px;
+
+}
+
+
+.bank-section-heading h2 {
+
+    margin: 0 0 18px;
+
+    color:
+        #103d2b;
+
+    font-size:
+        clamp(34px, 4vw, 48px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+}
+
+
+.bank-section-heading h2 span {
+
+    color:
+        #1f7a4f;
+
+}
+
+
+.bank-section-heading p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color:
+        #7a8780;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   BENEFIT GRID
+===================================================== */
+
+.bank-benefits-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 14px;
+
+    margin-bottom: 70px;
+
+}
+
+
+/* =====================================================
+   BENEFIT CARD
+===================================================== */
+
+.bank-benefit-card {
+
+    position: relative;
+
+    min-height: 205px;
+
+    padding: 24px 20px;
+
+    background:
+        rgba(255,255,255,0.85);
+
+    border:
+        1px solid
+        rgba(31,122,79,0.10);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(31,122,79,0.055);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+
+    overflow: hidden;
+
+}
+
+
+.bank-benefit-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(82,206,8,.10);
+
+    filter: blur(45px);
+
+    top: -80px;
+    right: -80px;
+
+    opacity: 0;
+
+    transition:
+        opacity .4s ease;
+
+}
+
+
+.bank-benefit-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(31,122,79,.25);
+
+    box-shadow:
+        0 20px 45px
+        rgba(31,122,79,.12);
+
+}
+
+
+.bank-benefit-card:hover::before {
+
+    opacity: 1;
+
+}
+
+
+/* ICON */
+
+.benefit-icon {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 11px;
+
+    background:
+        #eaf7ef;
+
+    color:
+        #1f7a4f;
+
+    font-size: 17px;
+
+    transition:
+        all .3s ease;
+
+}
+
+
+.bank-benefit-card:hover .benefit-icon {
+
+    background:
+        #1f7a4f;
+
+    color:
+        #ffffff;
+
+    transform:
+        scale(1.05);
+
+}
+
+
+/* TITLE */
+
+.bank-benefit-card h3 {
+
+    margin: 0 0 10px;
+
+    color:
+        #173d2c;
+
+    font-size: 14px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+}
+
+
+/* TEXT */
+
+.bank-benefit-card p {
+
+    margin: 0;
+
+    color:
+        #7c8982;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   SERVICES ROW
+===================================================== */
+
+.bank-services-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+/* =====================================================
+   LEFT VISUAL
+===================================================== */
+
+.bank-services-visual {
+
+    position: relative;
+
+    min-height: 420px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #eaf8ef,
+            #f7fbf8
+        );
+
+    border:
+        1px solid
+        rgba(31,122,79,.08);
+
+    overflow: hidden;
+
+}
+
+
+/* GLOW */
+
+.bank-visual-glow {
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    left: 20px;
+    top: 60px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(82,206,8,.13);
+
+    filter: blur(65px);
+
+}
+
+
+/* BANK BUILDING */
+
+.bank-building {
+
+    position: absolute;
+
+    left: 80px;
+    top: 100px;
+
+    width: 180px;
+    height: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.45);
+
+    border:
+        1px solid
+        rgba(31,122,79,.08);
+
+    color:
+        #65b981;
+
+}
+
+
+.bank-building i {
+
+    font-size: 80px;
+
+    opacity: .55;
+
+}
+
+
+.bank-building span {
+
+    margin-top: -10px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =====================================================
+   SERVICE BOX
+===================================================== */
+
+.visual-service-box {
+
+    position: absolute;
+
+    right: 30px;
+
+    width: 230px;
+
+    min-height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 11px 15px;
+
+    background:
+        rgba(255,255,255,.95);
+
+    border:
+        1px solid
+        #e1ebe5;
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(31,122,79,.08);
+
+    z-index: 4;
+
+    transition:
+        all .3s ease;
+
+}
+
+
+.visual-service-box:hover {
+
+    transform:
+        translateX(7px);
+
+    border-color:
+        rgba(31,122,79,.25);
+
+    box-shadow:
+        0 15px 35px
+        rgba(31,122,79,.13);
+
+}
+
+
+/* POSITIONS */
+
+.service-box-1 {
+    top: 35px;
+}
+
+.service-box-2 {
+    top: 125px;
+}
+
+.service-box-3 {
+    top: 215px;
+}
+
+.service-box-4 {
+    top: 305px;
+}
+
+
+/* ICON */
+
+.service-box-icon {
+
+    flex-shrink: 0;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background:
+        #eaf7ef;
+
+    color:
+        #1f7a4f;
+
+    font-size: 14px;
+
+}
+
+
+.visual-service-box strong {
+
+    display: block;
+
+    color:
+        #244233;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.visual-service-box span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color:
+        #87938d;
+
+    font-size: 9px;
+
+}
+
+
+/* =====================================================
+   CONNECTING LINES
+===================================================== */
+
+.service-connector {
+
+    position: absolute;
+
+    left: 245px;
+
+    width: 70px;
+
+    height: 1px;
+
+    border-top:
+        1px dashed
+        rgba(31,122,79,.35);
+
+    z-index: 2;
+
+}
+
+
+.connector-1 {
+    top: 65px;
+}
+
+.connector-2 {
+    top: 155px;
+}
+
+.connector-3 {
+    top: 245px;
+}
+
+.connector-4 {
+    top: 335px;
+}
+
+
+/* =====================================================
+   RIGHT CONTENT
+===================================================== */
+
+.bank-services-content {
+
+    padding-right: 20px;
+
+}
+
+
+.bank-services-content h2 {
+
+    margin: 0 0 18px;
+
+    color:
+        #103d2b;
+
+    font-size:
+        clamp(32px, 3.5vw, 45px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+}
+
+
+.bank-services-content h2 span {
+
+    display: block;
+
+    color:
+        #1f7a4f;
+
+}
+
+
+.bank-services-content > p {
+
+    max-width: 530px;
+
+    margin-bottom: 24px;
+
+    color:
+        #78857e;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   SERVICE LIST
+===================================================== */
+
+.bank-service-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.bank-service-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color:
+        #526159;
+
+    font-size: 12px;
+
+}
+
+
+.bank-service-list i {
+
+    flex-shrink: 0;
+
+    color:
+        #35a958;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.partnership-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 20px;
+
+    border-radius: 7px;
+
+    background:
+        #1f7a4f;
+
+    color:
+        #ffffff !important;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition:
+        all .3s ease;
+
+}
+
+
+.partnership-btn:hover {
+
+    background:
+        #155f3c;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(31,122,79,.20);
+
+}
+
+
+.partnership-btn i {
+
+    transition:
+        transform .3s ease;
+
+}
+
+
+.partnership-btn:hover i {
+
+    transform:
+        translateX(4px);
+
+}
+
+
+/* =====================================================
+   SCROLL ANIMATION
+===================================================== */
+
+.bank-benefit-card {
+
+    opacity: 0;
+
+}
+
+
+.bank-benefit-card.scroll-left {
+
+    transform:
+        translateX(-70px);
+
+}
+
+
+.bank-benefit-card.scroll-right {
+
+    transform:
+        translateX(70px);
+
+}
+
+
+.bank-benefit-card.show {
+
+    opacity: 1;
+
+    transform:
+        translateX(0);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .bank-benefits-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .bank-services-row {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 45px;
+
+    }
+
+    .bank-services-content {
+
+        padding-right: 0;
+
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .bank-growth-section {
+
+        padding:
+            70px 20px 80px;
+
+    }
+
+
+    .bank-benefits-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .bank-benefit-card {
+
+        min-height: auto;
+
+        padding: 25px;
+
+    }
+
+
+    .bank-benefit-card.scroll-left,
+    .bank-benefit-card.scroll-right {
+
+        transform:
+            translateY(50px);
+
+    }
+
+
+    .bank-benefit-card.show {
+
+        transform:
+            translateY(0);
+
+    }
+
+
+    .bank-services-visual {
+
+        min-height: 530px;
+
+    }
+
+
+    .bank-building {
+
+        left: 50%;
+
+        top: 45px;
+
+        transform:
+            translateX(-50%);
+
+    }
+
+
+    .visual-service-box {
+
+        right: 20px;
+
+        left: 20px;
+
+        width: auto;
+
+    }
+
+
+    .service-box-1 {
+        top: 250px;
+    }
+
+    .service-box-2 {
+        top: 320px;
+    }
+
+    .service-box-3 {
+        top: 390px;
+    }
+
+    .service-box-4 {
+        top: 460px;
+    }
+
+
+    .service-connector {
+
+        display: none;
+
+    }
+
+
+    .bank-services-content h2 {
+
+        font-size: 34px;
+
+    }
+
+}
+/* =====================================================
+   PARTNERSHIP PROCESS
+===================================================== */
+
+.partnership-process {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 95px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(31, 122, 79, 0.035),
+            transparent 30%
+        ),
+        #f5f8f7;
+
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.process-heading {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+}
+
+
+.process-tag {
+
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 5px;
+
+    background:
+        rgba(82, 206, 8, 0.10);
+
+    color:
+        #42a91b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: .7px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.process-heading h2 {
+
+    margin: 0;
+
+    color:
+        #103d2b;
+
+    font-size:
+        clamp(32px, 4vw, 46px);
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: -.8px;
+
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.process-timeline {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+
+    padding-bottom: 90px;
+
+}
+
+
+/* CONNECTING LINE */
+
+.process-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 31px;
+
+    left: 7%;
+
+    right: 7%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(31,122,79,.25),
+            rgba(31,122,79,.25),
+            transparent
+        );
+
+}
+
+
+/* =====================================================
+   PROCESS STEP
+===================================================== */
+
+.process-step {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    padding: 0 8px;
+
+    transition:
+        transform .4s ease;
+
+}
+
+
+.process-step:hover {
+
+    transform:
+        translateY(-7px);
+
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.process-icon {
+
+    position: relative;
+
+    width: 64px;
+
+    height: 64px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eaf7ef
+        );
+
+    border:
+        1px solid
+        rgba(31,122,79,.10);
+
+    color:
+        #1f7a4f;
+
+    font-size: 18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(31,122,79,.08);
+
+    transition:
+        all .35s ease;
+
+}
+
+
+.process-icon::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -5px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(82,206,8,.12);
+
+    opacity: 0;
+
+    transform: scale(.8);
+
+    transition:
+        all .35s ease;
+
+}
+
+
+.process-step:hover .process-icon {
+
+    background:
+        #1f7a4f;
+
+    color:
+        #ffffff;
+
+    transform:
+        scale(1.08);
+
+    box-shadow:
+        0 12px 30px
+        rgba(31,122,79,.20);
+
+}
+
+
+.process-step:hover .process-icon::after {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+}
+
+
+/* =====================================================
+   STEP NUMBER
+===================================================== */
+
+.step-number {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color:
+        #55a879;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.process-content h3 {
+
+    margin: 0 0 9px;
+
+    color:
+        #173d2c;
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.process-content p {
+
+    max-width: 160px;
+
+    margin: 0 auto;
+
+    color:
+        #7b8881;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.partner-stats {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            120deg,
+            #17623f,
+            #1f7a4f,
+            #17623f
+        );
+
+    padding:
+        28px 0;
+
+}
+
+
+/* BACKGROUND GLOW */
+
+.partner-stats::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    left: -150px;
+
+    top: -300px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(82,206,8,.14);
+
+    filter:
+        blur(60px);
+
+}
+
+
+.partner-stats::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    right: -150px;
+
+    bottom: -300px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.06);
+
+    filter:
+        blur(50px);
+
+}
+
+
+/* =====================================================
+   STATS GRID
+===================================================== */
+
+.stats-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+}
+
+
+/* =====================================================
+   STAT ITEM
+===================================================== */
+
+.stat-item {
+
+    position: relative;
+
+    text-align: center;
+
+    padding: 5px 20px;
+
+}
+
+
+.stat-item:not(:last-child)::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 0;
+
+    width: 1px;
+
+    height: 55px;
+
+    background:
+        rgba(255,255,255,.16);
+
+}
+
+
+/* NUMBER */
+
+.stat-item strong {
+
+    display: block;
+
+    color:
+        #ffffff;
+
+    font-size:
+        clamp(28px, 3vw, 38px);
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* LABEL */
+
+.stat-item span {
+
+    display: block;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+}
+
+
+/* =====================================================
+   DESKTOP HOVER
+===================================================== */
+
+.stat-item {
+
+    transition:
+        transform .3s ease;
+
+}
+
+
+.stat-item:hover {
+
+    transform:
+        translateY(-4px);
+
+}
+
+
+.stat-item:hover strong {
+
+    text-shadow:
+        0 0 25px
+        rgba(255,255,255,.25);
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .process-timeline {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        row-gap: 50px;
+
+    }
+
+
+    .process-timeline::before {
+
+        display: none;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .partnership-process {
+
+        padding-top: 70px;
+
+    }
+
+
+    .process-heading {
+
+        padding: 0 20px;
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .process-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .process-timeline {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 35px;
+
+        padding:
+            0 20px 65px;
+
+    }
+
+
+    .process-step {
+
+        display: flex;
+
+        align-items: center;
+
+        text-align: left;
+
+        gap: 18px;
+
+        padding: 0;
+
+    }
+
+
+    .process-icon {
+
+        flex-shrink: 0;
+
+        margin: 0;
+
+        width: 58px;
+
+        height: 58px;
+
+    }
+
+
+    .process-content p {
+
+        margin: 0;
+
+        max-width: 100%;
+
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 25px;
+
+    }
+
+
+    .stat-item {
+
+        padding: 5px 10px;
+
+    }
+
+
+    .stat-item:nth-child(2)::after {
+
+        display: none;
+
+    }
+
+
+    .stat-item:nth-child(1)::after,
+    .stat-item:nth-child(3)::after {
+
+        height: 50px;
+
+    }
+
+}
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+.process-step {
+
+    opacity: 0;
+
+    transform:
+        translateX(-45px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+
+.process-step:nth-child(even) {
+
+    transform:
+        translateX(45px);
+
+}
+
+
+.process-step.process-visible {
+
+    opacity: 1;
+
+    transform:
+        translateX(0);
+
+}
+
+/* =====================================================
+   BANK PARTNERSHIP HERO
+===================================================== */
+
+.bank-partner-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 90px 0;
+
+    background:
+        radial-gradient(
+            circle at 85% 45%,
+            rgba(31, 122, 79, 0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(82, 206, 8, 0.04),
+            transparent 30%
+        ),
+        #f7faf8;
+
+}
+
+
+/* =====================================================
+   WRAPPER
+===================================================== */
+
+.bank-hero-wrapper {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.bank-hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.bank-hero-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 13px;
+
+    border-radius: 5px;
+
+    background:
+        rgba(31, 122, 79, 0.09);
+
+    color:
+        #1f7a4f;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: .6px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.bank-hero-content h1 {
+
+    max-width: 650px;
+
+    margin: 0;
+
+    color:
+        #102f24;
+
+    font-size:
+        clamp(42px, 5vw, 64px);
+
+    line-height: 1.08;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+}
+
+
+.bank-hero-content h1 span {
+
+    display: block;
+
+    color:
+        #1f7a4f;
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.bank-hero-description {
+
+    max-width: 610px;
+
+    margin: 25px 0 30px;
+
+    color:
+        #687870;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =====================================================
+   MINI BENEFITS
+===================================================== */
+
+.bank-mini-benefits {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    max-width: 680px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.bank-mini-item {
+
+    position: relative;
+
+}
+
+
+.bank-mini-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    border-radius: 50%;
+
+    background:
+        #e9f7ef;
+
+    color:
+        #1f7a4f;
+
+    font-size: 14px;
+
+    transition:
+        all .3s ease;
+
+}
+
+
+.bank-mini-item:hover .bank-mini-icon {
+
+    background:
+        #1f7a4f;
+
+    color:
+        #ffffff;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(31,122,79,.18);
+
+}
+
+
+.bank-mini-item h3 {
+
+    margin: 0 0 5px;
+
+    color:
+        #173b2d;
+
+    font-size: 12px;
+
+    font-weight: 750;
+
+}
+
+
+.bank-mini-item p {
+
+    margin: 0;
+
+    color:
+        #84908a;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.bank-hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+.bank-primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 21px;
+
+    border-radius: 7px;
+
+    background:
+        #1f7a4f;
+
+    color:
+        #ffffff !important;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition:
+        all .3s ease;
+
+}
+
+
+.bank-primary-btn:hover {
+
+    background:
+        #155f3c;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(31,122,79,.20);
+
+}
+
+
+.bank-primary-btn i {
+
+    transition:
+        transform .3s ease;
+
+}
+
+
+.bank-primary-btn:hover i {
+
+    transform:
+        translateX(4px);
+
+}
+
+
+.bank-secondary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 19px;
+
+    border-radius: 7px;
+
+    border:
+        1px solid
+        rgba(31,122,79,.25);
+
+    background:
+        rgba(255,255,255,.7);
+
+    color:
+        #1f7a4f !important;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition:
+        all .3s ease;
+
+}
+
+
+.bank-secondary-btn:hover {
+
+    background:
+        #ffffff;
+
+    border-color:
+        #1f7a4f;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(31,122,79,.10);
+
+}
+
+
+/* =====================================================
+   RIGHT VISUAL
+===================================================== */
+
+.bank-hero-visual {
+
+    position: relative;
+
+    min-height: 530px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =====================================================
+   MAIN IMAGE CIRCLE
+===================================================== */
+
+.bank-image-circle {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 420px;
+
+    height: 420px;
+
+    padding: 10px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.85);
+
+    border:
+        2px solid
+        rgba(31,122,79,.20);
+
+    box-shadow:
+        0 25px 70px
+        rgba(31,122,79,.15);
+
+    transition:
+        transform .5s ease,
+        box-shadow .5s ease;
+
+}
+
+
+/* IMAGE */
+
+.bank-image-circle img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+
+/* HOVER */
+
+.bank-image-circle:hover {
+
+    transform:
+        scale(1.025);
+
+    box-shadow:
+        0 30px 90px
+        rgba(31,122,79,.25);
+
+}
+
+
+/* =====================================================
+   ROTATING OUTER RINGS
+===================================================== */
+
+.orbit-ring {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+.orbit-ring-1 {
+
+    width: 470px;
+
+    height: 470px;
+
+    border:
+        1px dashed
+        rgba(31,122,79,.25);
+
+    animation:
+        rotateOrbit 25s linear infinite;
+
+}
+
+
+.orbit-ring-2 {
+
+    width: 500px;
+
+    height: 500px;
+
+    border:
+        1px solid
+        rgba(31,122,79,.08);
+
+    animation:
+        rotateOrbitReverse 35s linear infinite;
+
+}
+
+
+/* =====================================================
+   ORBIT DOTS
+===================================================== */
+
+.orbit-dot {
+
+    position: absolute;
+
+    z-index: 5;
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+
+    background:
+        #1f7a4f;
+
+    box-shadow:
+        0 0 0 7px
+        rgba(31,122,79,.08),
+
+        0 0 20px
+        rgba(31,122,79,.35);
+
+}
+
+
+.orbit-dot-1 {
+
+    top: 80px;
+
+    right: 95px;
+
+    animation:
+        floatingDot 4s ease-in-out infinite;
+
+}
+
+
+.orbit-dot-2 {
+
+    bottom: 75px;
+
+    right: 35px;
+
+    width: 10px;
+
+    height: 10px;
+
+    background:
+        #52ce08;
+
+    animation:
+        floatingDot 5s ease-in-out infinite reverse;
+
+}
+
+
+/* =====================================================
+   GLOW BEHIND IMAGE
+===================================================== */
+
+.bank-hero-visual::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(82,206,8,.12);
+
+    filter:
+        blur(70px);
+
+    animation:
+        imageGlow 5s ease-in-out infinite;
+
+}
+
+
+/* =====================================================
+   TRUSTED BANK CARD
+===================================================== */
+
+.trusted-bank-card {
+
+    position: absolute;
+
+    z-index: 6;
+
+    left: 5px;
+
+    bottom: 65px;
+
+    width: 220px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,.96);
+
+    border:
+        1px solid
+        rgba(31,122,79,.10);
+
+    box-shadow:
+        0 20px 50px
+        rgba(22,73,50,.15);
+
+    backdrop-filter:
+        blur(12px);
+
+    animation:
+        floatingCard 5s ease-in-out infinite;
+
+}
+
+
+.trusted-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    border-radius: 50%;
+
+    background:
+        #eaf7ef;
+
+    color:
+        #1f7a4f;
+
+    font-size: 17px;
+
+}
+
+
+.trusted-bank-card h3 {
+
+    margin: 0 0 13px;
+
+    color:
+        #193c2e;
+
+    font-size: 13px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+}
+
+
+.trusted-bank-card h3 span {
+
+    display: block;
+
+    color:
+        #1f7a4f;
+
+}
+
+
+.trusted-bank-card ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+.trusted-bank-card li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 8px;
+
+    color:
+        #65736c;
+
+    font-size: 10px;
+
+}
+
+
+.trusted-bank-card li i {
+
+    color:
+        #36aa5c;
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes rotateOrbit {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes rotateOrbitReverse {
+
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+
+@keyframes floatingDot {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-12px);
+    }
+
+}
+
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-9px);
+    }
+
+}
+
+
+@keyframes imageGlow {
+
+    0%,
+    100% {
+
+        transform:
+            scale(.95);
+
+        opacity:
+            .7;
+
+    }
+
+    50% {
+
+        transform:
+            scale(1.08);
+
+        opacity:
+            1;
+
+    }
+
+}
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+.bank-hero-content {
+
+    opacity: 0;
+
+    transform:
+        translateX(-60px);
+
+    animation:
+        heroContentIn .9s ease forwards;
+
+}
+
+
+.bank-hero-visual {
+
+    opacity: 0;
+
+    transform:
+        translateX(60px);
+
+    animation:
+        heroVisualIn 1s ease .15s forwards;
+
+}
+
+
+@keyframes heroContentIn {
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+
+@keyframes heroVisualIn {
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .bank-hero-wrapper {
+
+        gap: 35px;
+
+    }
+
+
+    .bank-mini-benefits {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .bank-image-circle {
+
+        width: 360px;
+
+        height: 360px;
+
+    }
+
+
+    .orbit-ring-1 {
+
+        width: 400px;
+
+        height: 400px;
+
+    }
+
+
+    .orbit-ring-2 {
+
+        width: 430px;
+
+        height: 430px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .bank-partner-hero {
+
+        min-height: auto;
+
+        padding:
+            65px 20px 80px;
+
+    }
+
+
+    .bank-hero-wrapper {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 55px;
+
+    }
+
+
+    .bank-hero-content {
+
+        text-align: center;
+
+    }
+
+
+    .bank-hero-content h1 {
+
+        font-size: 39px;
+
+        letter-spacing:
+            -1px;
+
+    }
+
+
+    .bank-hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .bank-mini-benefits {
+
+        max-width: 450px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        text-align: left;
+
+    }
+
+
+    .bank-hero-buttons {
+
+        justify-content:
+            center;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .bank-hero-visual {
+
+        min-height: 470px;
+
+    }
+
+
+    .bank-image-circle {
+
+        width: 310px;
+
+        height: 310px;
+
+    }
+
+
+    .orbit-ring-1 {
+
+        width: 345px;
+
+        height: 345px;
+
+    }
+
+
+    .orbit-ring-2 {
+
+        width: 375px;
+
+        height: 375px;
+
+    }
+
+
+    .trusted-bank-card {
+
+        left: 50%;
+
+        bottom: 0;
+
+        transform:
+            translateX(-50%);
+
+        width: 205px;
+
+    }
+
+
+    .orbit-dot-1 {
+
+        top: 65px;
+
+        right: 50px;
+
+    }
+
+
+    .orbit-dot-2 {
+
+        right: 20px;
+
+        bottom: 80px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .bank-mini-benefits {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 20px 12px;
+
+    }
+
+
+    .bank-image-circle {
+
+        width: 270px;
+
+        height: 270px;
+
+    }
+
+
+    .orbit-ring-1 {
+
+        width: 300px;
+
+        height: 300px;
+
+    }
+
+
+    .orbit-ring-2 {
+
+        width: 325px;
+
+        height: 325px;
+
+    }
+
+
+    .bank-hero-visual {
+
+        min-height: 430px;
+
+    }
+
+
+    .trusted-bank-card {
+
+        width: 190px;
+
+        padding: 16px;
+
+    }
+
+
+    .bank-secondary-btn,
+    .bank-primary-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .bank-hero-buttons {
+
+        width: 100%;
+
+    }
+
+}

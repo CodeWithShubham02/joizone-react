@@ -1,0 +1,38 @@
+:root {
+    --primary-bg: #1f7a4f;
+    --secondary-bg: #a6f0d0;
+    --accent-bg: #52ce08;
+
+    --text-dark: #000000;
+    --text-light: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+#top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--accent-bg);
+
+    z-index: 999;
+}
